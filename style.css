@@ -14,16 +14,17 @@
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    padding: var(--topPadding)
+    padding: var(--topPadding);
 }
 
 .grid-item {
-    border: .5px solid black;
     flex-grow: 1;
     min-width: 25%;
+    border: 1px dotted black;
 }
 
 .reset-button {
+
     width: 10rem;
     position: absolute;
     left: calc(50% - 10rem/2);

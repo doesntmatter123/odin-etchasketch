@@ -37,7 +37,7 @@ function fillGrid(gridSize, gridContainer) {
   gridContainer.appendChild(createResetButton());
 }
 
-
+// get user input to decide grid size
 function getGridSize() {// Get user input
   let userInput = ''
   while (isNaN(parseInt(userInput, 10)) || userInput.trim() === '' || userInput >
@@ -48,7 +48,7 @@ function getGridSize() {// Get user input
   return parseInt(userInput, 10);
 }
 
-
+// reset the grid
 function resetGrid(gridContainer) {
   gridContainer.replaceChildren();
   const gridSize = getGridSize();
@@ -66,7 +66,7 @@ mainContainer.classList.add('main-container')
 document.body.appendChild(mainContainer)
 
 //Run the script on init
-resetGrid(mainContainer)
+fillGrid(64, mainContainer)
 
 
 
