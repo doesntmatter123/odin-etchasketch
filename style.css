@@ -9,10 +9,16 @@
 }
 
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .main-container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    width: 1000px;
     height: 100vh;
     padding: var(--topPadding);
 }

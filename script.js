@@ -18,11 +18,12 @@ function fillGrid(gridSize, gridContainer) {
     newDivNode.classList.add('grid-item')
     newDivNode.style.minWidth = `${100 / Math.sqrt(gridSize)}%`
 
-    // Mouseover coloring event (Happens only once!)
+    // Mouseover coloring event (First-hover)
     newDivNode.addEventListener('mouseover', (e) => {
       let randomColorHex = Math.floor(Math.random()*16777215).toString(16);
       newDivNode.style.backgroundColor = '#' + randomColorHex
       newDivNode.style.opacity = '0'
+      newDivNode.style.border = 'none'
       console.log(newDivNode.style.opacity)
     }, {once: true})
     // Mouseover opacity stacking (Happens 10x)
